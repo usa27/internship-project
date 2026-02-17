@@ -22,7 +22,7 @@ class SearchPage(Page):
         self.wait_until_clickable_click(*self.OUT_OF_STOCK_STATUS_BTN)
 
     def verify_products_contain_status_tag(self):
-        sleep(5)
+        sleep(10)
         self.wait_until_element_present(*self.FILTER_IS_ACTIVE_BTN)
         self.wait_until_element_present(*self.OUT_OF_STOCK_TAG)
         status_tags = self.find_elements(*self.OUT_OF_STOCK_TAG)

@@ -12,6 +12,7 @@ def login_to_account(context):
     context.app.sign_in_page.enter_valid_email()
     context.app.sign_in_page.enter_valid_password()
     context.app.sign_in_page.click_continue()
+    sleep(5)
 
 
 @when('Click on “off plan” in the left side menu')
