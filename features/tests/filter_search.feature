@@ -1,6 +1,7 @@
 # Created by alexandrabugaeva at 2/14/26
 Feature: Tests for property search
 
+  @smoke
   Scenario: User can filter by status Out Of Stock
     Given Open Reelly main page
     When Log in to the account
